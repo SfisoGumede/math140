@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIDEOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for the graduation cap icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             background-color: cadetblue;
+            position: relative; /* for absolute positioning of the credit */
+            min-height: 100vh;
+            margin: 0;
+            padding-bottom: 40px; /* ensure space for bottom-right text */
         }
         .video-card {
             margin-bottom: 20px;
@@ -20,13 +26,35 @@
         .header-section {
             margin-bottom: 30px;
         }
+        /* Bottom right corner credit */
+        .credit-corner {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.9rem;
+            color: #1e3c3c;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .fa-graduation-cap {
+            color: #2c3e50;
+            margin-right: 4px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header-section text-center">
-            <h1 class="mb-3"><img src="proAcedemy.jpg" alt="" style="width: 5%; float: left; margin-top: 8px; border-radius: 40px;">📚 MATH140 videos</h1>
-            <h2 class="mb-4">Recommended youtube videos!!!</h2>
+            <h1 class="mb-3">
+                <i class="fas fa-graduation-cap" style="float: left; margin-top: 8px; font-size: 2rem; color: #2c3e50;"></i>
+                MATH140 videos
+            </h1>
+            <h2 class="mb-4">Recommended youtube videos</h2>
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -76,6 +104,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Bottom right corner credit -->
+    <div class="credit-corner">
+        <i class="fas fa-user-graduation cap-1"></i> By Sfiso Gumede
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
